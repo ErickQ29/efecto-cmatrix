@@ -1,0 +1,55 @@
+/* Fondo negro pantalla completa */
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    overflow: hidden;
+    font-family: 'Courier New', monospace;
+    cursor: crosshair;
+}
+
+/* El lienzo ocupa toda la pantalla */
+canvas {
+    display: block;
+    background: #000;
+}
+
+/* Mensaje que aparece al hacer clic */
+.message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    color: #ff69b4;
+    text-shadow: 0 0 20px #ff69b4, 0 0 40px #ff1493;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 100;
+    font-weight: bold;
+    text-align: center;
+    animation: fadeInOut 3s ease-in-out;
+}
+
+/* Animaciones */
+@keyframes fadeInOut {
+    0%   { opacity: 0; transform: translate(-50%, -50%) scale(0.5); }
+    50%  { opacity: 1; transform: translate(-50%, -50%) scale(1.1); }
+    100% { opacity: 0; transform: translate(-50%, -50%) scale(1); }
+}
+
+@keyframes glow {
+    0%, 100% { text-shadow: 0 0 5px currentColor; }
+    50%      { text-shadow: 0 0 20px currentColor, 0 0 30px currentColor; }
+}
+
+/* Frases que caen */
+.falling-text {
+    position: absolute;
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap;
+    animation: fall linear infinite, glow 2s ease-in-out infinite;
+    pointer-events: none;
+    z-index: 10;
+}
