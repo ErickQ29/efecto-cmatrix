@@ -94,4 +94,4 @@ También puedes abrir un `issue` directamente en el repositorio para reportar bu
 Este proyecto está liberado bajo la **licencia MIT**. Esto significa que eres libre de usar, modificar y distribuir este código para fines personales, creativos o profesionales. Si lo utilizas en un proyecto derivado, se agradece mucho una atribución.
 
 -----
-Esto lo hice pensando en la chica que me gusta, esperaba que te gustara Johelys... Espero seas feliz, aunque no pueda se yo quien te acompañe en esa felicidad
+Esto lo hice pensando en la chica que me gusta, esperaba que te gustara Johelys... Espero seas feliz, aunque no pueda se yo quien te acompañe en esa felicidad pero siempre te amare.
